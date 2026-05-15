@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///C:/Users/denni/Downloads/marinna_bernal_onepager_1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marinna Bernal — Early Childhood Educator</title>
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Lato', sans-serif;
+    background: #fff0f5;
+    color: #2d0a1e;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+  .page {
+    background: #fff;
+    width: 816px;
+    max-width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 32px rgba(194,24,91,0.10);
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #c2185b 0%, #880e4f 60%, #4a0028 100%);
+    padding: 36px 48px 28px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .header-left {}
+  .header-left .greeting {
+    font-size: 11px;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 4px;
+  }
+  .header-left h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .header-left h1 span { color: #f8bbd0; }
+  .header-left .subtitle {
+    margin-top: 8px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.75);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .header-right {
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .header-right .contact-item {
+    font-size: 12px;
+    color: rgba(255,255,255,0.78);
+    margin-bottom: 5px;
+    font-weight: 300;
+  }
+  .header-right .contact-item strong {
+    color: #f48fb1;
+    font-weight: 400;
+  }
+  .accent-bar {
+    height: 4px;
+    background: linear-gradient(90deg, #f48fb1, #c2185b, #880e4f);
+  }
+
+  /* BODY */
+  .body { padding: 32px 48px 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+
+  /* SECTION */
+  .section { margin-bottom: 24px; }
+  .section:last-child { margin-bottom: 0; }
+  .section-title {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #c2185b;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1.5px solid #f8bbd0;
+  }
+
+  /* CREDENTIAL TAGS */
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 4px; }
+  .tag {
+    background: #fff0f5;
+    border: 1px solid #f8bbd0;
+    border-radius: 3px;
+    padding: 4px 10px;
+    font-size: 11px;
+    color: #880e4f;
+    font-weight: 400;
+  }
+  .tag.highlight {
+    background: #c2185b;
+    border-color: #c2185b;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  /* SKILLS */
+  .skill-list { list-style: none; }
+  .skill-list li {
+    font-size: 12.5px;
+    color: #3d0020;
+    padding: 4px 0;
+    border-bottom: 0.5px solid #fce4ec;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.4;
+  }
+  .skill-list li::before {
+    content: '♦';
+    color: #f48fb1;
+    font-size: 8px;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+
+  /* EXPERIENCE */
+  .exp-item { margin-bottom: 12px; }
+  .exp-item .role {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #880e4f;
+    line-height: 1.3;
+  }
+  .exp-item .org {
+    font-size: 12px;
+    color: #3d0020;
+    font-weight: 400;
+  }
+  .exp-item .dates {
+    font-size: 11px;
+    color: #ad1457;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+  }
+
+  /* EDUCATION */
+  .edu-item { margin-bottom: 10px; }
+  .edu-item .degree {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #880e4f;
+    line-height: 1.3;
+  }
+  .edu-item .school {
+    font-size: 12px;
+    color: #3d0020;
+  }
+  .edu-item .year {
+    font-size: 11px;
+    color: #ad1457;
+    font-weight: 300;
+  }
+
+  /* PHILOSOPHY */
+  .philosophy {
+    background: #fff0f5;
+    border-left: 3px solid #c2185b;
+    padding: 12px 16px;
+    border-radius: 0 4px 4px 0;
+    font-size: 12.5px;
+    color: #3d0020;
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  /* REFERENCES STRIP */
+  .refs-strip {
+    background: #fce4ec;
+    padding: 16px 48px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .refs-strip .refs-label {
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #880e4f;
+    font-weight: 700;
+    margin-bottom: 6px;
+    flex-basis: 100%;
+  }
+  .ref-item { flex: 1; min-width: 160px; }
+  .ref-item .ref-name { font-size: 12px; font-weight: 700; color: #4a0028; }
+  .ref-item .ref-role { font-size: 11px; color: #880e4f; font-weight: 300; }
+
+  /* FOOTER */
+  .footer {
+    background: #4a0028;
+    padding: 14px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer .tagline {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: #f8bbd0;
+    font-style: italic;
+  }
+  .footer .avail {
+    font-size: 11px;
+    color: rgba(255,255,255,0.65);
+    font-weight: 300;
+  }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; border-radius: 0; width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="header-left">
+      <div class="greeting">Early Childhood &amp; Elementary Educator</div>
+      <h1>Marinna <span>Bernal</span></h1>
+      <div class="subtitle">M.A. Education &nbsp;·&nbsp; Multiple Subjects Clear Credential &nbsp;·&nbsp; CA Certified</div>
+    </div>
+    <div class="header-right">
+      <div class="contact-item"><strong>Email</strong>&nbsp; teacher@marinnabernal.com</div>
+      <div class="contact-item"><strong>Phone</strong>&nbsp; (760) 234-7487</div>
+      <div class="contact-item"><strong>Web</strong>&nbsp; <a href="https://www.marinnabernal.com/" style="color:#f48fb1;text-decoration:none;">www.marinnabernal.com</a></div>
+      <div class="contact-item"><strong>LinkedIn</strong>&nbsp; <a href="https://www.linkedin.com/in/marinna-bernal-5b113440b/" style="color:#f48fb1;text-decoration:none;">linkedin.com/in/marinna-bernal</a></div>
+      <div class="contact-item"><strong>Availability</strong>&nbsp; Summer 2026 · Open to Relocation</div>
+    </div>
+  </div>
+  <div class="accent-bar"></div>
+
+  <div class="body">
+
+    <!-- LEFT COLUMN -->
+    <div>
+
+      <div class="section">
+        <div class="section-title">Who I Am</div>
+        <div class="philosophy">
+          A fully credentialed California educator with five years of classroom experience across TK, Kindergarten, and Special Education. I build joyful, structured learning environments where every child — including English language learners and students with IEPs — feels seen, supported, and ready to grow.
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Credentials &amp; Specializations</div>
+        <div class="tags">
+          <span class="tag highlight">TK Specialist</span>
+          <span class="tag highlight">Special Education</span>
+          <span class="tag">Kindergarten</span>
+          <span class="tag">IEP Development</span>
+          <span class="tag">ELL Support</span>
+          <span class="tag">PECS Certified</span>
+          <span class="tag">UDL Trained</span>
+          <span class="tag">Conscious Discipline</span>
+          <span class="tag">Handwriting Without Tears</span>
+          <span class="tag">Marzano Strategies</span>
+          <span class="tag">Formative Assessment</span>
+          <span class="tag">Play-Based Learning</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Professional Skills</div>
+        <ul class="skill-list">
+          <li>Dual expertise in TK <em>and</em> Special Education — rare combination highly valued by districts</li>
+          <li>IEP development, implementation, and progress monitoring</li>
+          <li>English Language Learner support with home language strategies</li>
+          <li>Sensory-inclusive classroom design and behavior support</li>
+          <li>Pictorial schedules, visual timers, and transition management</li>
+          <li>Music, movement, and play-based instructional delivery</li>
+          <li>Positive parent &amp; family communication and community engagement</li>
+          <li>American Sign Language — Associate's degree level proficiency</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+
+      <div class="section">
+        <div class="section-title">Teaching Experience</div>
+
+        <div class="exp-item">
+          <div class="role">Transitional Kindergarten Teacher</div>
+          <div class="org">Centralia Elementary School District</div>
+          <div class="dates">August 2025 – Present</div>
+        </div>
+        <div class="exp-item">
+          <div class="role">Early Childhood Special Education Teacher</div>
+          <div class="org">Imperial County Office of Education</div>
+          <div class="dates">August 2024 – June 2025</div>
+        </div>
+        <div class="exp-item">
+          <div class="role">Transitional Kindergarten Teacher</div>
+          <div class="org">El Centro Elementary School District</div>
+          <div class="dates">August 2022 – June 2023</div>
+        </div>
+        <div class="exp-item">
+          <div class="role">TK–1st Grade Independent Studies Teacher</div>
+          <div class="org">Westmorland Union Elementary School District</div>
+          <div class="dates">December 2021 – March 2022</div>
+        </div>
+        <div class="exp-item">
+          <div class="role">Long-Term Substitute Kindergarten Teacher</div>
+          <div class="org">Westmorland Union &amp; Imperial Unified School Districts</div>
+          <div class="dates">August 2020 – December 2021</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="edu-item">
+          <div class="degree">M.A. Elementary Education — Multiple Subjects Clear Credential</div>
+          <div class="school">Western Governors University</div>
+          <div class="year">June 2025</div>
+        </div>
+        <div class="edu-item">
+          <div class="degree">24 Units in Early Childhood Education</div>
+          <div class="school">American College of Education</div>
+          <div class="year">June 2023</div>
+        </div>
+        <div class="edu-item">
+          <div class="degree">B.S. Liberal Arts</div>
+          <div class="school">Excelsior University</div>
+          <div class="year">March 2018</div>
+        </div>
+        <div class="edu-item">
+          <div class="degree">A.A. American Sign Language</div>
+          <div class="school">Golden West College</div>
+          <div class="year">May 2016</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="refs-strip">
+    <div class="refs-label">Professional References — Available Upon Request</div>
+    <div class="ref-item">
+      <div class="ref-name">Bianca Marchese</div>
+      <div class="ref-role">Elementary Principal, Centralia ESD</div>
+    </div>
+    <div class="ref-item">
+      <div class="ref-name">Dawn Spangenberg</div>
+      <div class="ref-role">TK Teacher, Centralia ESD</div>
+    </div>
+    <div class="ref-item">
+      <div class="ref-name">Laura Domenzain</div>
+      <div class="ref-role">SpEd Teacher, Imperial Co. OE</div>
+    </div>
+    <div class="ref-item">
+      <div class="ref-name">Miriam Felix</div>
+      <div class="ref-role">Education Specialist, El Centro ESD</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="tagline">"Every child deserves a teacher who believes in their potential."</div>
+    <div class="avail">Available August 2026 &nbsp;·&nbsp; Open to Relocation &nbsp;·&nbsp; TK · K · SpEd</div>
+  </div>
+
+</div>
+
+
+</body></html>
